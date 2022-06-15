@@ -76,5 +76,6 @@ const scrapeAllPageAndAds = async () => {
     console.log(targetUrl)
   }
   fs.writeFileSync('ads.json', JSON.stringify(allAds), 'utf-8')
+  console.log('completed')
   return allAds
 })();
